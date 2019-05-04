@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dashed black;
+    width: 720px;
+}
+
+.box1 { order: 0; flex-basis: calc(70% - 20px); }
+.box2 { order: 1; flex-basis: calc(30% - 20px); }
+.box3 { order: 2; flex: 1; }
+.box4 { order: 3; flex: 1; }
+.box5 { order: 4; flex: 1; }
+.box6 { order: 5; flex: 1; }
+
+.box {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    background-color: lightgreen;
+    box-sizing: border-box;
+    
+    /* non-essential; for styling numbers only */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+    <div class="box box1"><span>1</span></div>
+    <div class="box box2"><span>2</span></div>
+    <div class="box box3"><span>3</span></div>
+    <div class="box box4"><span>4</span></div>
+    <div class="box box5"><span>5</span></div>
+    <div class="box box6"><span>6</span></div>
+</div>
+</body>
+</html>
